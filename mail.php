@@ -32,16 +32,16 @@ try {
   $mail->SMTPAuth   = true;
 
   // Настройки вашей почты
-  $mail->Host       = 'mail.khilinski.com'; // SMTP сервера вашей почты
-  $mail->Username   = 'info@khilinski.com'; // Логин на почте
-  $mail->Password   = '0xy0-~J,6;4q'; // Пароль на почте
+  $mail->Host       = ''; // SMTP сервера вашей почты
+  $mail->Username   = ''; // Логин на почте
+  $mail->Password   = ''; // Пароль на почте
   $mail->SMTPSecure = 'ssl';
   $mail->Port       = 465;
 
-  $mail->setFrom('info@khilinski.com', 'Заявка с вашего сайта'); // Адрес самой почты и имя отправителя
+  $mail->setFrom('info@khil.com', 'Заявка с вашего сайта'); // Адрес самой почты и имя отправителя
 
   // Получатель письма
-  $mail->addAddress('info@khilinski.com');
+  $mail->addAddress('info@khki.com');
 
   // Прикрепление файлов
         if (isset($_FILES['file1']) && $_FILES['file1']['error'] == UPLOAD_ERR_OK) {
